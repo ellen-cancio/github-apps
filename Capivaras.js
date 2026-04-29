@@ -11,10 +11,8 @@ const Capivaras = () => {
   const { width, height } = useWindowDimensions();
   const isLandscape = width > height;
 
-  // Se deitado = 2 colunas, se em pé = 1 coluna
   const numeroDeColunas = isLandscape ? 2 : 1;
 
-  // Calcula a largura subtraindo os paddings da tela para não quebrar a linha
   const larguraDoCard = width / numeroDeColunas - 20;
 
   const capivaras = ["Cleide", "Jorge", "Jubileu", "Fifi"];
@@ -41,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   caixaDePapelao: {
-    backgroundColor: "#8B4513", // Marrom
+    backgroundColor: "#8B4513", 
     height: 150,
     marginVertical: 10,
     borderRadius: 15,
